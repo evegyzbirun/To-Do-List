@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Weekly Chores</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Weekly Chores</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <hr>
+        <h2>Add a Chore:</h2>
+        <form id="new-chore">
+          <div class="form-group">
+            <label for="new-morning-chore">Morning Chore</label>
+            <input type="text" class="form-control" id="new-morning-chore">
+          </div>
+          <div class="form-group">
+            <label for="new-afternoon-chore">Afternoon Chore</label>
+            <input type="text" class="form-control" id="new-afternoon-chore">
+          </div>
+          <div class="form-group">
+            <label for="new-evening-chore">Evening Chore</label>
+            <input type="text" class="form-control" id="new-evening-chore">
+          </div>
+          <button type="submit" class="btn-dark">Dispaly New Chore</button>
+        </form>
+        <hr>
+        <h2>Full Day:</h2>
+        <ul id="chores">
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="show-chore">
+          <p>Morning Chore: <span class="morning-chore"></span></p>
+          <p>Afternoon Chore: <span class="afternoon-chore"></span></p>
+          <p>Evening Chore: <span class="evening-chore"></span></p>
+          <div id="buttons">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
